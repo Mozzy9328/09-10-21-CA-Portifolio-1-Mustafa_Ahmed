@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+	background-color: #f9e5bc7d;
+}
+
+/*
+
+NAV
+
+*/
+
+nav {
+	background-color: #f9e5bc;
+	border-radius: 0px 0px 70px 70px;
+	border: 3px solid #ebc375;
+	padding: 40px 0px;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+	font-size: 20px;
+}
+
+.current {
+	display: block;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li a:hover {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* TITLES */
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 25px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: center;
+	cursor: default;
+}
+
+p {
+	font-size: 15px;
+	margin: 10px 0px;
+	cursor: default;
+}
+
+footer {
+	position: static;
+	padding: 20px 0px;
+	text-align: center;
+	background-color: #f9e5bc;
+	border-radius: 70px 70px 0px 0px;
+	border: 3px solid #ebc375;
+}
+/*HEADER*/
+
+.header-title {
+	margin-top: 50px;
+}
+
+.header-blog1-img {
+	background-image: url("/images/rainydays.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 22px;
+	padding-bottom: 200px;
+}
+
+.header-blog2-img {
+	background-image: url("/images/community.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	margin-top: 22px;
+	padding-bottom: 200px;
+}
+
+.header-blog3-img {
+	background-image: url("/images/travelsofmozzy.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 22px;
+	background-size: 100%;
+	padding-bottom: 200px;
+}
+
+/*MAIN*/
+/* INDEX */
+.main-container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.web-index {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-evenly;
+}
+
+/*The articles*/
+.main-container-article {
+	display: flex;
+	flex-direction: column;
+}
+/* 
+.web-article {
+} */
+
+.web-title {
+	margin: 40px 0px;
+}
+
+.web-description {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.web-description h3 {
+	text-align: left;
+}
+
+/* Images */
+
+.web-index img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: 29vh;
+}
+
+.web-article img {
+	display: block;
+	margin: 30px auto;
+	width: 70vw;
+	height: auto;
+}
+@media (max-width: 1000px) {
+	/*HAMBURGER MENU*/
+	.hamburger-icon {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		position: absolute;
+		cursor: pointer;
+		width: 40px;
+		height: 35px;
+		top: 4px;
+		right: 20px;
+	}
+	.hide {
+		display: none;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.change {
+		display: flex;
+		margin-top: 15px;
+	}
+
+	.current {
+		text-align: center;
+		font-size: 30px;
+		margin-top: 9px;
+	}
+
+	.line {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		border: 3px solid #000;
+		background-color: #000;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+	/*MAIN*/
+	.main-container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 15px;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
