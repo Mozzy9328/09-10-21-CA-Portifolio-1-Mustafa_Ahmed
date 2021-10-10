@@ -37,7 +37,7 @@ a {
 	color: #000;
 }
 
-li a:hover {
+a:hover {
 	font-style: italic;
 	text-decoration: underline;
 }
@@ -61,7 +61,7 @@ h3 {
 
 p {
 	font-size: 15px;
-	margin: 10px 0px;
+	margin: 20px 0px;
 	cursor: default;
 }
 
@@ -80,36 +80,16 @@ footer {
 }
 
 .header-blog1-img {
-	background-image: url("/images/rainydays.jpg");
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	margin-top: 22px;
-	padding-bottom: 200px;
-}
-
-.header-blog2-img {
-	background-image: url("/images/community.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	margin-top: 22px;
-	padding-bottom: 200px;
-}
-
-.header-blog3-img {
-	background-image: url("/images/travelsofmozzy.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: 22px;
-	background-size: 100%;
-	padding-bottom: 200px;
+	display: block;
+	margin: 4% auto;
+	width: 80%;
+	height: auto;
 }
 
 /*MAIN*/
 /* INDEX */
 .main-container {
-	margin-top: 50px;
+	margin: 45px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -125,21 +105,31 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
-/* 
-.web-article {
-} */
 
 .web-title {
-	margin: 40px 0px;
+	margin-top: 40px;
 }
 
-.web-description {
+/*WEB DESCRIPTION*/
+.web-link {
 	margin: 0 auto;
 	width: 85%;
 }
 
-.web-description h3 {
-	text-align: left;
+.web-link p:nth-child(1) {
+	font-weight: bold;
+}
+
+.web-link p:nth-child(4) {
+	font-weight: bold;
+}
+
+.web-description {
+	margin: 5% auto;
+	width: 70%;
+	padding: 40px;
+	border-radius: 100px;
+	border: 2px solid;
 }
 
 /* Images */
